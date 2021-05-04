@@ -1,0 +1,9 @@
+#+title: operating systems
+#+roam_tags: Computers
+#+roam_alias: OS
+
+
+Operating systems take care for:
+-[[file:20210503180104-virtualization.org][ virtualization]]
+- [[file:20210503180124-concurrency.org][concurrency]]
+- [[file:20210503180234-persistence.org][persistence]]

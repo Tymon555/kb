@@ -1,0 +1,10 @@
+#+title: process state
+#+roam_tags: Computers OS
+
+process can be:
+- running
+- ready - OS has chosen to not run it at the given moment
+- blocked - i.e. when a process initiates I/O
+- initial, final/zombie,
+
+[[file:process_state_transitions.png][process transitions]]

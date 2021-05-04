@@ -1,0 +1,23 @@
+#+title: process
+#+roam_tags: OS Computers
+
+process in [[file:20210503173741-operating_systems.org][OS]] is a running program; a bunch of instructions and possibly static data.
+
+OS virtualizes CPU by scheduling processes.
+
+Parts of machine state of the process are:
+- [[file:20210503181604-address_space.org][address space]] (memory)
+- registers
+- I/O e.g. list of files opened
+
+Process API:
+- create
+  + we need to load the instructions/static data from disk to memory
+  + allocate memory for stack/heap
+  + I/O setup
+- destroy
+- wait
+- miscalleneous control e.g. suspend/resume
+- status: access [[file:20210503183934-process_state.org][process state]]
+
+[[file:20210503192218-unix_process_api.org][UNIX process API]]

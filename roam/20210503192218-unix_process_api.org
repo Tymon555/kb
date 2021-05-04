@@ -1,0 +1,11 @@
+#+title: UNIX process API
+#+roam_tags: OS
+
+in UNIX, we use ~fork~ and ~exec~ for creating processes.
+~wait~ can be used by parent process to wait for the child to complete.
+
+when we use ~fork~, we create a new (child) process with its own address space, registers, and the return value from the call is PID of child for the parent process, and 0 for the child process
+
+~wait~ system call does not return until a child process has run and exited.
+
+~exec~ runs a different program; given the executable name and args, it loads the code from the executable and overwrites current code segment/static data with it. Stack and heap are re-initialized, and the program is run. It transforms the process to the new program, and should never go back to the 'creator' program (i.e. should never return).

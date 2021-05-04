@@ -1,0 +1,10 @@
+#+title: virtualization
+#+roam_tags: Computers
+
+Virtualization abstracts away physical (e.g. CPU) and provides programs with _virtual_ abstraction of the former.
+
+In[[file:20210503173741-operating_systems.org][ OS]] , the abstractions are:
+- [[file:20210503180529-process.org][process]]; those are governed by:
+  + low-level mechanisms, like *context switch*, which stops one process and starts another
+  + high-level intelligence, *policy*
+- OS keeps a process list to keep track of the processes running; each entry is called a process control block
